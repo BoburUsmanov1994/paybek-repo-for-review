@@ -1,0 +1,89 @@
+
+.react-tabs{
+    margin-top: 30px;
+}
+.react-tabs__tab{
+    padding: 12px 24px;
+    bottom: -1px;
+    color: #585757;
+    font-size: 16px;
+    font-weight: 500;
+    &:focus{
+        box-shadow: unset !important;
+        border-color: unset !important;
+        background-color: transparent;
+    }
+    &.react-tabs__tab--selected{
+        border:none;
+        border-bottom: 2px solid #0085FF;
+        color: #0085FF;
+    }
+}
+.react-tabs__tab-list{
+    padding: 0 30px;
+}
+.react-tabs__tab-panel{
+    padding: 50px;
+}
+.pagination{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    li{
+        margin-right: 8px;
+        cursor: pointer;
+        &:last-child{
+            margin-right: 0;
+        }
+        a{
+            text-decoration: none;
+            padding: 8px 12px;
+            background-color: #fff;
+            border: 1px solid #E8E8E8;
+            color: #1C1C1C;
+            border-radius: 8px;
+        }
+        &.active{
+          a{
+              background-color: #0085FF;
+              border-color: #0085FF;
+              color: #fff;
+              box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.08);
+          }
+        }
+        &.disabled{
+            a {
+                color: #969696;
+                cursor: not-allowed;
+            }
+        }
+    }
+}
+
+.horizontal-line{
+    width: 100%;
+    border: 1px solid #E8E8E8;
+}
+.check-icon{
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+    text-align: center;
+    &.arrow{
+        margin-bottom: 5px;
+    }
+}
+.react-confirm-alert-body{
+    text-align: center;
+}
+.react-confirm-alert-button-group{
+    justify-content: center;
+    button{
+        &:first-child{
+            background-color: #EC536A;
+        }
+        &:last-child{
+            background-color: #53AC92;
+        }
+    }
+}
